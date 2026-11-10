@@ -1,74 +1,173 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FashionFit | Style Your Everyday</title>
+    <meta name="description" content="FashionFit is a fashion content creation and Pinterest content management tool for men's and women's fashion.">
+    <title>FashionFit | Fashion Content Management</title>
+
     <style>
         body {
             margin: 0;
             font-family: Arial, sans-serif;
             background: #f8f5f2;
             color: #252525;
-            text-align: center;
+            line-height: 1.6;
         }
+
         header {
             background: #222;
             color: white;
             padding: 55px 20px;
+            text-align: center;
         }
+
         h1 { font-size: 42px; }
+
         main {
-            max-width: 750px;
-            margin: 50px auto;
+            max-width: 850px;
+            margin: 35px auto;
             padding: 20px;
         }
-        .categories {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            flex-wrap: wrap;
-            margin: 30px 0;
-        }
-        .category {
+
+        section {
             background: white;
-            padding: 22px;
+            padding: 25px;
+            margin: 20px 0;
             border-radius: 12px;
-            min-width: 130px;
         }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .feature {
+            background: #f3efeb;
+            padding: 18px;
+            border-radius: 10px;
+        }
+
+        a { color: #8b3f65; }
+
         footer {
             background: #222;
             color: white;
-            padding: 20px;
+            padding: 25px;
+            text-align: center;
         }
+
+        footer a { color: white; }
     </style>
 </head>
+
 <body>
-    <header>
-        <h1>FashionFit</h1>
-        <p>Style Your Everyday. Discover Your Look.</p>
-    </header>
 
-    <main>
-        <h2>Welcome to FashionFit Hub</h2>
+<header>
+    <h1>FashionFit</h1>
+    <p>Fashion Content Creation and Management</p>
+</header>
+
+<main>
+
+    <section>
+        <h2>About FashionFit</h2>
         <p>
-            FashionFit brings together fashion inspiration for men and women.
-            Explore everyday outfits, streetwear, smart casual looks and
-            aesthetic styling ideas.
+            FashionFit is a personal fashion content creation and
+            management project focused on men's and women's fashion.
+            It helps create, organize and manage fashion inspiration
+            content for Pinterest.
         </p>
+        <p>
+            The platform focuses on everyday outfits, streetwear,
+            smart casual fashion, minimalist looks and aesthetic styling.
+        </p>
+    </section>
 
-        <div class="categories">
-            <div class="category">Men's Fashion</div>
-            <div class="category">Women's Fashion</div>
-            <div class="category">Streetwear</div>
-            <div class="category">Aesthetic Style</div>
+    <section>
+        <h2>What FashionFit Does</h2>
+
+        <div class="features">
+            <div class="feature">
+                <h3>Fashion Content Ideas</h3>
+                <p>
+                    Generates fashion topics and outfit inspiration
+                    ideas for different audiences and styles.
+                </p>
+            </div>
+
+            <div class="feature">
+                <h3>Pin Image Creation</h3>
+                <p>
+                    Creates branded vertical fashion images
+                    for Pinterest content.
+                </p>
+            </div>
+
+            <div class="feature">
+                <h3>Content Details</h3>
+                <p>
+                    Prepares Pin titles, descriptions and
+                    relevant keywords.
+                </p>
+            </div>
+
+            <div class="feature">
+                <h3>Content Management</h3>
+                <p>
+                    Provides a dashboard to review, edit,
+                    approve, reject and schedule content.
+                </p>
+            </div>
         </div>
+    </section>
 
-        <p>Discover outfit inspiration and find your personal style.</p>
-    </main>
+    <section>
+        <h2>How It Works</h2>
+        <ol>
+            <li>Generate fashion content ideas.</li>
+            <li>Create fashion images and Pin descriptions.</li>
+            <li>Review and edit the generated content.</li>
+            <li>Approve or reject individual Pins.</li>
+            <li>Schedule approved content for publishing.</li>
+        </ol>
+        <p>
+            The project is currently designed for managing
+            the developer's own fashion content. Pinterest
+            API publishing will be implemented subject to
+            API access approval and authorization.
+        </p>
+    </section>
 
-    <footer>
-        <p>FashionFit | Fashion Inspiration for Everyone</p>
-    </footer>
+    <section>
+        <h2>Fashion Categories</h2>
+        <p>
+            Men's Fashion | Women's Fashion |
+            Streetwear | Smart Casual |
+            Minimalist Style | Aesthetic Fashion
+        </p>
+    </section>
+
+    <section>
+        <h2>Privacy and Information</h2>
+        <p>
+            FashionFit is a personal development project.
+            Information about data handling and privacy
+            is available in our Privacy Policy.
+        </p>
+        <p>
+            <a href="privacy.html">Read Privacy Policy</a>
+        </p>
+    </section>
+
+</main>
+
+<footer>
+    <p>FashionFit | Fashion Content Creation and Management</p>
+    <p>Personal Developer Project</p>
+</footer>
+
 </body>
 </html>
